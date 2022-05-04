@@ -1,0 +1,40 @@
+<div class="menu-init">
+  <div class="background-menu">
+    <button title="Menu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button [routerLink]="['']" mat-menu-item>
+        <mat-icon>first_page</mat-icon>
+        <span>Pagina Inicial</span>
+      </button>
+<!--      <button [routerLink]="['']" fragment="planos" mat-menu-item>-->
+<!--        <mat-icon>paid</mat-icon>-->
+<!--        <span>Planos</span>-->
+<!--      </button>-->
+<!--      <button [routerLink]="['']" fragment="comentarios" mat-menu-item>-->
+<!--        <mat-icon>forum</mat-icon>-->
+<!--        <span>Comentários</span>-->
+<!--      </button>-->
+<!--      <button [routerLink]="['']" mat-menu-item>-->
+<!--        <mat-icon>public</mat-icon>-->
+<!--        <span>Social</span>-->
+<!--      </button>-->
+      <button [routerLink]="['/clientes-cadastrados']" mat-menu-item>
+        <mat-icon>person</mat-icon>
+        <span>Clientes Cadastrados</span>
+      </button>
+      <button [routerLink]="['/prestadores-cadastrados']" mat-menu-item>
+        <mat-icon>person</mat-icon>
+        <span>Prestadores Cadastrados</span>
+      </button>
+    </mat-menu>
+    <button mat-icon-button class="direction-right" [routerLink]="['/login']">
+      <mat-icon title="Cadastro">account_circle</mat-icon>
+    </button>
+  </div>
+  <div class="logo-menu-position">
+    <img src="../../../assets/menu-img/DogWalkers.png" alt="Logo DogWalkers">
+  </div>
+</div>
+
