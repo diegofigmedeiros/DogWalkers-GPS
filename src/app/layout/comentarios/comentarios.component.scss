@@ -1,0 +1,65 @@
+.centralizar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--blue-light);
+  width: 100%;
+  padding: 2rem;
+}
+
+.example-container mat-card {
+  background-color: var(--blue-dark);
+  width: 30vw;
+  min-width: fit-content;
+  margin: 10% auto;
+  border-radius: 8px;
+}
+
+mat-card-title {
+  text-align: center;
+  margin: 1rem 0 1rem 0 ;
+}
+
+mat-form-field, mat-checkbox {
+  width: 80%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+mat-card-content {
+  margin-top: 1rem;
+}
+
+.meiota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-comment {
+  background-color: var(--blue-dark);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.comment {
+  background-color: var(--blue-light);
+  width: 30vw;
+  min-width: max-content;
+  margin: 2rem;
+}
+
+.comment mat-card-title mat-card-subtitle {
+  width: 80%;
+  display: block;
+}
+
+.comment .mat-card-title {
+  font-weight: normal;
+}
+
+.comment .mat-card-content {
+  margin-bottom: 0;
+  text-align: center;
+}

@@ -5,12 +5,14 @@ import { MatMenuModule } from "@angular/material/menu";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
+import { CarrosselComponent } from './carrossel/carrossel.component';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
 import { MdbCarouselModule } from "mdb-angular-ui-kit/carousel";
 import { AgmCoreModule } from '@agm/core';
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatInputModule } from "@angular/material/input";
+import { ComentariosComponent } from './comentarios/comentarios.component';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
 import { MatOptionModule } from "@angular/material/core";
@@ -27,7 +29,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
+    CarrosselComponent,
     MenuComponent,
+    ComentariosComponent,
     PrincipalComponent,
   ],
   imports: [
@@ -62,6 +66,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
   ],
   exports: [
     MenuComponent,
+    CarrosselComponent,
+    ComentariosComponent,
   ]
 })
 export class LayoutModule { }

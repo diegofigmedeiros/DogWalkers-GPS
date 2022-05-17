@@ -1,0 +1,52 @@
+<div id="comentarios" class="centralizar">
+  <div class="example-container">
+    <mat-card class="mat-elevation-z6">
+      <mat-card-title>Comentários</mat-card-title>
+      <mat-card-content class="meiota">
+          <mat-form-field [formGroup]="validations" appearance="fill">
+            <mat-label>E-mail</mat-label>
+            <input #mail matInput placeholder="example@example.com" formControlName="email">
+            <mat-error *ngIf="validations.controls.email.hasError('email')">Email inválido</mat-error>
+            <mat-error *ngIf="validations.controls.email.hasError('required')">Preencha o campo</mat-error>
+          </mat-form-field>
+          <mat-form-field [formGroup]="validations" appearance="fill">
+            <mat-label>Comentário</mat-label>
+            <textarea #comment formControlName="comentarios" matInput></textarea>
+            <mat-error *ngIf="validations.controls.comentarios.hasError('required')">
+              Preencha o campo
+            </mat-error>
+          </mat-form-field>
+          <div class="button-centralizar">
+          <button
+            type="submit"
+            mat-raised-button
+            mat-icon-button
+            (click)="inserirComentario(mail.value, comment.value, mail, comment)"
+            [disabled]="validations.invalid"
+          >
+            <mat-icon>send</mat-icon>
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<div class="background-comment">
+  <mat-card class="comment" *ngFor="let comentario of comentarios">
+    <mat-card-title>{{comentario.email}}</mat-card-title>
+    <mat-card-content>
+      {{comentario.conteudo}}
+    </mat-card-content>
+      <br>
+    <mat-card-actions align="end">
+      <button mat-icon-button (click)="editarComentario(comentario, mail, comment)" [disabled]="validations.invalid">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button (click)="deletarComentario(comentario)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
