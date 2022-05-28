@@ -19,6 +19,7 @@ import { MatOptionModule } from "@angular/material/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { PrincipalComponent } from './principal/principal.component';
+import { FooterComponent } from './footer/footer.component';
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDividerModule } from '@angular/material/divider';
@@ -33,6 +34,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MenuComponent,
     ComentariosComponent,
     PrincipalComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -68,6 +70,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MenuComponent,
     CarrosselComponent,
     ComentariosComponent,
+    FooterComponent,
   ]
 })
 export class LayoutModule { }
