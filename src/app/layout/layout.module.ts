@@ -10,6 +10,7 @@ import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
 import { MdbCarouselModule } from "mdb-angular-ui-kit/carousel";
 import { AgmCoreModule } from '@agm/core';
 import { MatTabsModule } from "@angular/material/tabs";
+import { CadastroComponent } from './cadastro/cadastro.component';
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatInputModule } from "@angular/material/input";
 import { ComentariosComponent } from './comentarios/comentarios.component';
@@ -33,6 +34,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
   declarations: [
     CarrosselComponent,
     MenuComponent,
+    CadastroComponent,
     ComentariosComponent,
     PrincipalComponent,
     FooterComponent,
@@ -71,6 +73,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
   exports: [
     MenuComponent,
     CarrosselComponent,
+    CadastroComponent,
     ComentariosComponent,
     FooterComponent,
     PrestadoresCadastradosComponent
