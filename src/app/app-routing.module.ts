@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from "./layout/cadastro/cadastro.component";
 import { PrincipalComponent } from "./layout/principal/principal.component";
+import {LoginComponent} from "./layout/login/login.component";
 import {ClientesCadastradosComponent} from "./layout/clientes-cadastrados/clientes-cadastrados.component";
 import {PrestadoresCadastradosComponent} from "./layout/prestadores-cadastrados/prestadores-cadastrados.component";
 
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: "cadastros",
     component: CadastroComponent
+  },
+  {
+    path: "login",
+    component: LoginComponent
   },
   {
     path: "clientes-cadastrados",

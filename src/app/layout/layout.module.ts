@@ -27,6 +27,7 @@ import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { LoginComponent } from './login/login.component';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { ClientesCadastradosComponent } from './clientes-cadastrados/clientes-cadastrados.component';
 import { PrestadoresCadastradosComponent } from './prestadores-cadastrados/prestadores-cadastrados.component';
@@ -43,6 +44,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ComentariosComponent,
     PrincipalComponent,
     FooterComponent,
+    LoginComponent,
     ClientesCadastradosComponent,
     PrestadoresCadastradosComponent
   ],
@@ -84,6 +86,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     CadastroComponent,
     ComentariosComponent,
     FooterComponent,
+    LoginComponent,
     ClientesCadastradosComponent,
     PrestadoresCadastradosComponent
   ]
