@@ -27,6 +27,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from "@angular/material/toolbar";
+import { ClientesCadastradosComponent } from './clientes-cadastrados/clientes-cadastrados.component';
 import { PrestadoresCadastradosComponent } from './prestadores-cadastrados/prestadores-cadastrados.component';
 import { MatTableModule } from "@angular/material/table";
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -40,6 +41,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ComentariosComponent,
     PrincipalComponent,
     FooterComponent,
+    ClientesCadastradosComponent,
     PrestadoresCadastradosComponent
   ],
   imports: [
@@ -79,6 +81,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     CadastroComponent,
     ComentariosComponent,
     FooterComponent,
+    ClientesCadastradosComponent,
     PrestadoresCadastradosComponent
   ]
 })
