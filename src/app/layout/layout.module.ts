@@ -8,6 +8,7 @@ import { MatCardModule } from "@angular/material/card";
 import { CarrosselComponent } from './carrossel/carrossel.component';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
 import { MdbCarouselModule } from "mdb-angular-ui-kit/carousel";
+import { PlanosComponent } from './planos/planos.component';
 import { AgmCoreModule } from '@agm/core';
 import { MatTabsModule } from "@angular/material/tabs";
 import { CadastroComponent } from './cadastro/cadastro.component';
@@ -34,6 +35,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
   declarations: [
     CarrosselComponent,
     MenuComponent,
+    PlanosComponent,
     CadastroComponent,
     ComentariosComponent,
     PrincipalComponent,
@@ -73,6 +75,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
   exports: [
     MenuComponent,
     CarrosselComponent,
+    PlanosComponent,
     CadastroComponent,
     ComentariosComponent,
     FooterComponent,
