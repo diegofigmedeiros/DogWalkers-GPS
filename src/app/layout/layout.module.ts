@@ -9,6 +9,7 @@ import { CarrosselComponent } from './carrossel/carrossel.component';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
 import { MdbCarouselModule } from "mdb-angular-ui-kit/carousel";
 import { PlanosComponent } from './planos/planos.component';
+import { MapaComponent } from './mapa/mapa.component';
 import { AgmCoreModule } from '@agm/core';
 import { MatTabsModule } from "@angular/material/tabs";
 import { CadastroComponent } from './cadastro/cadastro.component';
@@ -26,6 +27,9 @@ import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { LoginComponent } from './login/login.component';
+import { LoginValidacaoComponent } from './login-validacao/login-validacao.component';
+import { PerfilComponent } from './perfil/perfil.component';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { ClientesCadastradosComponent } from './clientes-cadastrados/clientes-cadastrados.component';
 import { PrestadoresCadastradosComponent } from './prestadores-cadastrados/prestadores-cadastrados.component';
@@ -37,10 +41,14 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     CarrosselComponent,
     MenuComponent,
     PlanosComponent,
+    MapaComponent,
     CadastroComponent,
     ComentariosComponent,
     PrincipalComponent,
     FooterComponent,
+    LoginComponent,
+    LoginValidacaoComponent,
+    PerfilComponent,
     ClientesCadastradosComponent,
     PrestadoresCadastradosComponent
   ],
@@ -78,9 +86,13 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MenuComponent,
     CarrosselComponent,
     PlanosComponent,
+    MapaComponent,
     CadastroComponent,
     ComentariosComponent,
     FooterComponent,
+    LoginComponent,
+    LoginValidacaoComponent,
+    PerfilComponent,
     ClientesCadastradosComponent,
     PrestadoresCadastradosComponent
   ]
